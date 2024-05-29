@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box-1">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+    <h1>Jquery get methods</h1>
+    <div id="box" class="test abc">
+      <h2>Test Box</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea   <span> suscipit deleniti molestiae  
+      </span> quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+    var a = $("#box").html();
+    var a = $("#box p").html();
+    var a = $("#box p span").html();
+    var a = $("#box").text();
+    var a = $("#box").attr('class');
+    var a = $("#box").attr('id');
+    console.log(a)
+    })
+  </script>
+</body>
+
+</html>

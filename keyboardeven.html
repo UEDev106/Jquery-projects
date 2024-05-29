@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div id="#box-1">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+    
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+     $("body").keydown(function(){
+      $(this).css("background-color","orange")
+     })
+     $("body").keyup(function(){
+      $(this).css("background","green")
+     })
+    })
+  </script>
+</body>
+
+</html>

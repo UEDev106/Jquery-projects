@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+     <button class="empty">Empty</button>
+     <button class="remove">Remove</button>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+    $(".empty").click(function(){
+      $(".box p").empty()
+      $(".box h1").empty()
+      // browser is remove krta editor main 
+      //para hota ha
+    })
+    $(".remove").click(function(){
+      // $(".box h1").remove()
+      $(".box p").remove()
+      //remove editor sy be remove kr deta ha
+    })
+    })
+  </script>
+</body>
+
+</html>

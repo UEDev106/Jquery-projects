@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1> Stop Propagation</h1>
+
+   <div id="box">
+    <h2>Test Box</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quos architecto qui officia repellendus illum aut porro, vel hic aspernatur! Laborum molestias totam iure sunt et nam quam, quia quae, facilis mollitia voluptates at! Laudantium deserunt ducimus, et cumque, earum quis voluptatem qui modi facilis ipsam magnam adipisci ipsum ullam.</p>
+    <button>Test</button>
+   </div>
+
+  <script>
+    $(document).ready(function () {
+    $("#box").click(function(){
+      alert("box is clicked")
+    })    
+    $("h2").click(function(){
+      alert("h2 is clicked")
+    })    
+    $("p").click(function(){
+      alert("p is clicked")
+      event.stopPropagation();
+    })    
+    $("button").click(function(){
+      alert("button is clicked")
+    })    
+        
+      })
+   
+
+   // event bubling parent alret krny sy child automatic ho jata ha
+
+
+  </script>
+</body>
+
+</html>

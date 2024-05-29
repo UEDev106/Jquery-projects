@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+    <button class="show">Show</button>
+    <button class="hide">Hide</button>
+    <button class="toggle">Toggle</button>
+    
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+   $(".show").click(function(){
+    $(".box").show(1000,function(){
+      console.log("Now its showing")
+    })
+    
+
+   })
+   $(".hide").click(function(){
+    $(".box").hide(3000,function(){
+      console.log("Now its hiding")
+    })
+
+   })
+   $(".toggle").click(function(){
+    $(".box").toggle(3000,function(){
+      console.log("Now its toggling")
+    })
+
+   })
+    })
+  </script>
+</body>
+
+</html>

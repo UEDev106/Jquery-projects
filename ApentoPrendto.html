@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box">
+  
+    <div id="box">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+    <button class="Append">Appendto</button>
+    <button class="Prepend">Prependto</button>
+  </div>
+
+<!-- // append
+ $(".box").append("<h1>mern stack web de</h1>")
+
+ // append to 
+ $("<h1>backend</h1>").appendto(".box") -->
+  <script>
+    
+    $(".Append").click(function(){
+      $("<h1>ending script</>").appendTo(".box")
+    })
+    $(".Prepend").click(function(){
+      $("<p>starting script </p>").prependTo(".box")
+    })
+  </script>
+</body>
+
+</html>

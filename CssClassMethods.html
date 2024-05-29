@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- /*   add      remove    toggle
+*/ -->
+
+  <div class="conatiner">
+    <div class="box">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+   
+   
+  </div>
+ <br> 
+ <button class="addbutton">add class</button>
+ <button class="removebutton">remove class</button>
+ <button class="togglebutton">Toggle class</button>
+
+  <div id="box2">
+    <h1>Box 2</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+      dolores in porro dolorem nisi.
+    </p>
+    <button class="btn">submit Here</button>
+  </div>
+  <script>
+    $(document).ready(function () {
+    $(".addbutton").click(function(){
+    $(".box").addClass(" second") 
+    })
+
+    $(".removebutton").click(function(){
+      $(".box").removeClass("second")
+    })
+    $(".togglebutton").click(function(){
+      $(".box").toggleClass("second")
+    })
+   
+    })
+    $(".btn").click(function(){
+      $("#box2").css({"background-color":"pink","border":"2px dotted black","padding":"10px"})
+
+    })
+  </script>
+</body>
+
+</html>

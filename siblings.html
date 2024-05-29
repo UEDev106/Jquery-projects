@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #main-outer {
+      height: 400px;
+      width: 400px;
+      background-color: rebeccapurple;
+      margin-left: 40%;
+
+    }
+
+    #outer {
+      height: 300px;
+      width: 300px;
+      background-color: aqua;
+    }
+
+    #inner {
+      height: 200px;
+      width: 200px;
+      background-color: brown;
+    }
+
+    #child-head {
+      height: 100px;
+      width: 100px;
+      background-color: chartreuse;
+    }
+
+    #chils-c {
+      height: 50px;
+      width: 50px;
+      background-color: cornflowerblue;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      margin-left: 40%;
+      margin-top: 50px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <h1> Jquery Ancestors Methods</h1>
+    <div id="main-outer">Main Outer
+      <div id="outer">
+        <h1>outer</h1>
+        <div id="inner">
+          <h2 id="child-head">inner</h2>
+          <div style="background-color: rgb(165, 160, 161);height: 20px;width: 30px;margin-left: 30px;">A</div>
+          <div style="background-color: rgb(165, 160, 161);height: 20px;width: 30px;margin-left: 30px;">B</div>
+          <div id="child-C" style="background-color: rgb(165, 160, 161);height: 20px;width: 30px;margin-left: 30px;">C
+          </div>
+          <div class="delta" style="background-color: rgb(165, 160, 161);height: 25px;width: 20px;margin-left: 30px;">D</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<!--  
+  next   , nextall  , nextuntill(".classname")
+  prev   ,prevall , prevall("#idname")
+
+ -->
+
+  <script>
+    $(document).ready(function () {
+
+
+      // $("#child-C").siblings('div').css
+      //   ("background", "grey")
+      // $("#child-C").siblings('.delta').css
+      //   ("background", "grey")
+      // $("#child-C").siblings('.delta').css
+      //   ("background", "red")
+      $(".delta").prevAll().css
+        ("background", "red")
+      // $("#child-C").next().css
+      //   ("background", "red")
+      // $("#child-C").siblings('.delta').css
+      //   ("background", "red")
+
+
+    })
+  </script>
+</body>
+
+</html>

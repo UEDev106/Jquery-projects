@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <label for="name">Enter Name</label>
+    <input type="text" name="enter" class="uname">
+    <h1></h1>
+    <button class="btn">Submit</button>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".btn").click(function () {
+        var enteredName = $(".uname").val();
+        $("h1").text("Name is Entered: " + enteredName);
+        $("h1").css({
+          "background": "grey",
+          "color": "white",
+          "fontSize": "20px"
+        });
+      });
+
+      $(".uname").focus(function () {
+        $(this).css("background", "green");
+      });
+
+      $("h1").click(function () {
+        $(this).css("color", "red");
+        $(this).css("background", "green");
+        });
+      $("h1").dblclick(function () {
+        $(this).css("color", "");
+        $(this).css("background", "");
+        });
+      });
+    
+  </script>
+
+</body>
+
+</html>

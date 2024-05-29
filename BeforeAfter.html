@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box">
+  
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p> 
+    </div>
+    <button class="before">Before</button>
+    <button class="after">After</button>
+
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+    $(".before").click(function(){
+      $(".box").before("<h3>Frontend<h3/>")
+    })
+    $(".after").click(function(){
+      $(".box").after("<h3>Backend<h3/>")
+    })
+ 
+    })
+  </script>
+</body>
+
+</html>

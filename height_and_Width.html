@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+   <button class="height">Height</button>
+   <button class="width">Weidth</button>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+   $(".width").click(function(){
+    // console.log($('.box').width());
+    // console.log($('.box').innerWidth());
+    // console.log($('.box').outerWidth());
+    console.log($('.box').outerWidth(true));
+   })
+   $(".height").click(function(){
+    //  console.log($('.box').height());
+    //  console.log($('.box').innerHeight());
+    //  console.log($('.box').outerHeight());
+     console.log($('.box').outerHeight(true));
+   })
+    })
+  </script>
+</body>
+
+</html>

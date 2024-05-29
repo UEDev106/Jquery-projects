@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+    <button class="fadein">fadein</button>
+    <button class="fadeout">fadeout</button>
+    <button class="toggle">Toggle</button>
+    <button class="fadeto">fadeto</button>
+
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+    $(".fadein").click(function(){
+      $(".box").fadeIn("fast")
+    })
+    $(".fadeout").click(function(){
+      $(".box").fadeOut("slow")
+    })
+    $(".toggle").click(function(){
+      $(".box").toggle(3000)
+    })
+    $(".fadeto").click(function(){
+      $(".box").fadeTo(3000,0.2)
+      // time,trasparency(0-1)
+    })
+
+
+
+    })
+  </script>
+</body>
+
+</html>

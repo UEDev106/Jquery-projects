@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J Query</title>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Target Property</h1>
+    <div class="box">
+      <h1>test Box</h1>
+      <i>Enter Name</i>
+      <input type="text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam corrupti
+        soluta temporibus assumenda officia deserunt molestiae explicabo, quod
+        autem sunt. Possimus sequi quaerat iusto! Illo natus error blanditiis
+        odit similique.
+   <button class="test">Test</button></div>
+      
+      </p>
+    </div>
+    <br />
+
+    <br />
+    <h2></h2>
+
+    <script>
+      $(document).ready(function () {
+        $(".box").on("click", function (event) {
+          $("h2").html("Target Element :" + event.target.nodeName);
+          $("h2").css("background","red").css("color","white")
+        });
+      });
+    </script>
+  </body>
+</html>

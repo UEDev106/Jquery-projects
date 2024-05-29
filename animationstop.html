@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <h1>Animation Method</h1>
+    <div class="box">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+    <button class="animate">Animation</button>
+    <button class="stopbtn">Stop</button>
+
+  </div>
+  <!-- ensure before applying 
+  
+ 
+
+  <!--   animate({propeties},speed,callback function) -->
+  <script>
+    $(document).ready(function () {
+      $(".animate").click(function () {
+        $(".box").animate({ left: '350px' }, "fast", function () {
+          console.log("animation is working ")
+        });
+        $(".box").animate({ width: '+=50px' }, "slow", function () {
+          console.log("animation is working ")
+        });
+        $(".box").animate({ fontSize: '25px', top: '150px',border:"20px solid black" },5000);
+        $(".stopbtn").click(function(){
+          $(".box").stop(true)
+          // bydefault 1st wali stop hoti ha sari ko krny ky leay true pass krna prta ha as parameter
+        })
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

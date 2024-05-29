@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+   
+    <div id="box">
+      <h1>Box 2</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur <span> adipisicing elit. Ex ea suscipit deleniti </span> molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa aperiam dolores cupiditate sequi laudantium reiciendis eum saepe itaque nobis nemo.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa aperiam dolores cupiditate sequi laudantium reiciendis eum saepe itaque nobis nemo.</p>
+    </div>
+    <button id="replace">Replace</button>
+  </div>
+
+ <!-- replace all main content phly selector badh main -->
+
+  <script>
+    $(document).ready(function () {
+   $("#replace").click(function(){
+    // $("#box p:nth-child(3)").replaceWith("<h2> Mern Stack </h2>")
+    // $("#box p:nth-child(2)").replaceWith("<h2> Mern Stack </h2>")
+    // $("#box p").replaceWith("<h2> Mern Stack </h2>")
+    $("<span>Hellow</span>").replaceAll("#box p:nth-child(2)")
+    $("<h1>Mern Stack</h1>").replaceAll("#box p:nth-child(3)")
+   })
+    })
+  </script>
+</body>
+
+</html>
+</html>

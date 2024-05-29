@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Event Prevent Default</h1>
+  <div class="box">
+<a href="https://www.youtube.com/ " id="result">You tube Link prevent</a>
+<br> <br> <br>
+<a href="https://www.youtube.com/ " >Youtube Link </a>
+
+</div>
+
+<br>
+<h2></h2>
+  <script>
+    $(document).ready(function () {
+  $("#result").click(function(){
+    event.preventDefault()
+
+
+    var a = event.isDefaultPrevented();
+    $("h2").html(a)
+  })
+    });
+  </script>
+</body>
+
+</html>

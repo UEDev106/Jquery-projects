@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .red{
+      background-color: green;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box-1">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+  <button id="btn" style="margin-top: 20px;
+  margin-left: 40%;font-size: large;">Set Value</button>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+     $("#btn").click(function(){
+      $(".box-1 h1 ").text("Mern Stack Developer")
+      $(".box-1 p ").text("including full stack you must learn different libraries")
+      $(".box-1 h1 ").html("Mern <i> Stack </i> Developer")
+      $(".box-1 h1 ").attr("class","red")
+
+      $(".box-1 p ").html("including <b> full stack</b> you must learn different libraries")
+     })
+    })
+  </script>
+</body>
+
+</html>

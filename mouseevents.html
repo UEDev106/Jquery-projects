@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+   
+  
+    <div id="box-2">
+      <h1>Box 2</h1>
+      <p class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+  </div>
+
+
+  <script>
+   $(document).ready(function(){
+    $("#box-2").click(function(){
+      $("#box-2").css("background-color","grey")
+    });
+    $("#box-2").dblclick(function(){
+      $("#box-2").css("background-color","red");
+    })
+    $("#box-2").contextmenu(function(){
+      $("#box-2").css("background-color","green");
+    })
+    $("#box-2").mouseenter(function(){
+      $("#box-2").css("background-color","pink");
+    })
+    $("#box-2").mouseleave(function(){
+      $("#box-2").css("background-color","navy");
+    })
+   })
+  </script>
+</body>
+
+</html>

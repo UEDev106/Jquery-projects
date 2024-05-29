@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box-1">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+     <ul id="list">
+      <li class="test">Orange</li>
+      <li>Potato</li>
+      <li class="test">banana</li>
+      <li>onion
+        <p>Lorem ipsum dolor sit amet.</p>
+      </li>
+      <li class="test">guava</li>
+      <li>meat</li>
+      <li class="text">grapes</li>
+     </ul>
+ 
+  </div>
+
+
+  <script>
+   $(document).ready(function(){
+    // $("#list li ").css("border","2px solid red")
+    // $("#list li:eq(2) ").css("border","2px solid red")
+    // $("#list li:gt(2) ").css("border","2px solid red")
+    // $("#list li:lt(3) ").css("border","2px solid red")
+    // $("*").css("border","2px solid red")
+    // $("li p").css("border","2px solid red")
+    // $("li:last").css("border","2px solid red")
+    $("li:first").css("border","2px solid red","font-size","45px")
+  
+   })
+  </script>
+</body>
+
+</html>

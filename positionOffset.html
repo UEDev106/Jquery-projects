@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+    <button class="position">position</button>
+    <button class="offset">offset</button>
+
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+    $(".position ").click(function(){
+      var x=($(".box h1").position({top:5,left:15}))
+      console.log("Top: "+ x.top + "Left :"+ x.left)
+      
+    })
+    $(".offset ").click(function(){
+      var y =($(".box h1").offset({ top: 10, left: 10 }))
+       console.log("Top: " + y.top + "Left :" + y.left)
+      
+    })
+    $(".offset").click(function(){
+      
+    })
+    })
+  </script>
+</body>
+
+</html>

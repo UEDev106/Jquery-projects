@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="conatiner">
+    <div class="box">
+      <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ol>
+      <!-- <h1>Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi. -->
+      <!-- </p>  -->
+    </div>
+    <button class="append">Append</button>
+    <button class="prepend">Prepend</button>
+  
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+    // $(".append").click(function(){
+    //   $(".box").append("<h3> MernStack Web</h3>")
+    // }),
+    // $(".prepend").click( function(){
+    //   $(".box").prepend("<h3>Starting</h3>")
+    // })
+    $(".append").click(function(){
+      $(".box").append("<li>  item end</li>")
+    }),
+    $(".prepend").click( function(){
+      $(".box").prepend("<li>start item</li>")
+    })
+    })
+  </script>
+</body>
+
+</html>

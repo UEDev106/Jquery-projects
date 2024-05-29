@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  
+ 
+    <ul>
+      <li>orange</li>
+      <li>apple</li>
+      <li> grapes</li>
+      <li>banana</li>
+      <li>guava</li>
+    </ul>
+    
+    
+  
+
+
+
+  <script>
+    $(document).ready(function () {
+      
+    $("ul").each(function(){
+      $("li").text("helo")
+     console.log( $("li").html());
+    })
+    })
+  </script>
+</body>
+
+</html>

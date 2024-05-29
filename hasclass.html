@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Query</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- has class used to check either a class or function is implemented or not
+it returns always true value -->
+
+  <div class="conatiner">
+    <div class="box">
+      <h1 class="test abc xyz ">Box 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div>
+    <!-- <div id="box">
+      <h1>Box 2</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea suscipit deleniti molestiae quam perspiciatis,
+        dolores in porro dolorem nisi.
+      </p>
+    </div> -->
+    <button class="check">check</button>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+     $(".check").click(function(){
+    // console.log((".box h1").hasClass('test'))
+    var x= $(".box h1").hasClass('xyz')
+    if(x==true){
+      console.log('yes')
+    }else{
+      console.log('no')
+    }
+     })
+    })
+  </script>
+</body>
+
+</html>
